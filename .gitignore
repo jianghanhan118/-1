@@ -1,0 +1,55 @@
+# ============ 敏感凭据 (绝不推送) ============
+.xiaoyienv
+.xiaoyienv.bak
+.xiaoyitoken.json
+.vault/
+.vault_pass
+.meyo/credentials.json
+*.key
+*.pem
+*_token*
+
+# ============ Agent 会话日志 (大文件，非代码) ============
+agents/*/sessions/
+agents/*/cron/
+agents/*/cron.db
+
+# ============ 依赖 (到目标机器重新安装) ============
+node_modules/
+workspace/node_modules/
+repo/
+
+# ============ 缓存/编译产物 ============
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+.vs/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ============ 临时文件 ============
+tmp/
+tmp_img/
+*.log
+workspace/tmp/
+
+# ============ 第三方仓库 (clone 不包含原 .git) ============
+workspace/repo/
+
+# ============ 主配置 (只推送模板) ============
+openclaw.json
+
+# ============ 网关/通道配置 ============
+pushData.json
+pushIdList.json
+exec-approvals.json
+backup_result.json
+recover_result.json
+
+# ============ Canvas/图形 ============
+canvas/

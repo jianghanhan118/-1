@@ -53,3 +53,8 @@ recover_result.json
 
 # ============ Canvas/图形 ============
 canvas/
+
+# 以下分包是系统全量备份，需推送到仓库
+# packages/ 目录明确保留
+!packages/
+!packages/*
